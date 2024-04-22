@@ -1,6 +1,6 @@
 [project]
 name = "causalml"
-version = "0.15.1"
+version = "0.15.1+torchless"
 description = "Python Package for Uplift Modeling and Causal Inference with Machine Learning Algorithms"
 readme = { file = "README.md", content-type = "text/markdown" }
 
@@ -42,9 +42,8 @@ dependencies = [
     "lightgbm",
     "pygam",
     "packaging",
-    "torch",
-    "pyro-ppl",
     "graphviz",
+    "duecredit",
 ]
 
 [project.optional-dependencies]
@@ -54,6 +53,10 @@ test = [
 ]
 tf = [
     "tensorflow>=2.4.0"
+]
+torch = [
+    "torch",
+    "pyro-ppl",
 ]
 
 
